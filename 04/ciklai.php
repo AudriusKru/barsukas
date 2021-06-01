@@ -21,3 +21,14 @@ echo '<br>';echo '<br><hr>';echo '<br>';
 for ($x = 1; $x <= 5; $x++) {
     echo 'Numeris: '.$x.' <br>';
 }
+
+echo '<br>';echo '<br><hr>';echo '<br>';
+
+for ($i = 1;$i <= 15;$i++){
+    if (rand(0, 10)< 4){
+        continue;
+    }
+    echo $i;
+    echo '<br>';
+  }
+  echo 'Ciklo pabaiga';

@@ -15,3 +15,15 @@ for ($i = 1; $i <= 400 ; $i++) {
     }
 }
 // echo '</div>';
+
+// echo "1 b užduotis - išskaidyti 400 po 50 <br>";
+
+// $interv = 50;
+
+// for ($i =1 ; $i <= 400 / $interv ; $i++) {
+//   for ($k = 1 ; $k <= $interv ; $k++)
+//   {
+//       echo '*';
+//   }
+// echo "<br>";
+// }

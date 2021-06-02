@@ -13,7 +13,7 @@ for ($i = 0; $i < 300; $i++) {
         $kiek++;
     }
     if ($skaicius > 275) {
-        echo "<span style='color:red;'>$skaicius</span>". ' ';
+        echo "<span style='color:red;'>$skaicius</span>". ' '; // alima i olor taga
     } else {
         echo $skaicius .' ';
     }

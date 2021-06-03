@@ -4,8 +4,10 @@ $masyvas = [];
 
 //masyas kuriamas su fopreah
 
-foreach(range(1, 30) as $_) {
+foreach (range(1, 30) as $_) {
     $masyvas[] = rand(5, 25);
 }
 
-_d($masyvas);
+_d($masyvas, 'mano masyvas');
+
+

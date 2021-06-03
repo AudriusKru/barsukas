@@ -22,12 +22,13 @@ echo '2.A Uždavinio atsakymas:';
 echo '<br>';
 
 $kiek = 0;
+
 foreach ($masyvas as $index => $random) {
     if ($random > 10) {
         $kiek++;
     }
 }
-echo 'reiksmiu didesniu nei 10 yra: ' .$kiek .'<br>' .'<br><hr>';
+echo "reiksmiu didesniu nei 10 yra: $kiek" '<br>' .'<br><hr>';
 
 echo '2.B Uždavinio atsakymas:';
 echo '<br>';

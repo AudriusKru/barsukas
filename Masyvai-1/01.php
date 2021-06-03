@@ -14,6 +14,7 @@ $masyvas = array_fill(0, $elemetai, ' ');
 foreach ($masyvas as $index => &$random) {
     $random = rand(5, 25);
 }
+unset($random);
 
 echo '<br>';echo '<br><hr>';echo '<br>';
 

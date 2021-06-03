@@ -33,22 +33,40 @@
 
 //     else echo ' Nėra daugiau ';
 // }
-// else echo ' Nulis ';
+// // else echo ' Nulis ';
 
 
-echo '9) <br>';
+// echo '9) <br>';
 
-$kint1 = rand(0,100);
-$kint2 = rand(0,100);
-$kint3 = rand(0,100);
+// $kint1 = rand(0,100);
+// $kint2 = rand(0,100);
+// $kint3 = rand(0,100);
 
-echo $kint1. ', ' .$kint2. ', ' .$kint3.'<br>'; 
+// echo $kint1. ', ' .$kint2. ', ' .$kint3.'<br>'; 
 
-echo 'Avg = '.round(($kint1 + $kint2 + $kint3) / 3 ). '<br>';
+// echo 'Avg = '.round(($kint1 + $kint2 + $kint3) / 3 ). '<br>';
 
-if (10 < $kint1 && $kint1 < 90 && 10 < $kint2 && $kint2 < 90 && 10 < $kint3 && $kint3 < 90) {
-    echo 'Avg2 = '.round(($kint1 + $kint2 + $kint3) / 3 ). '<br>';
+// if (10 < $kint1 && $kint1 < 90 && 10 < $kint2 && $kint2 < 90 && 10 < $kint3 && $kint3 < 90) {
+//     echo 'Avg2 = '.round(($kint1 + $kint2 + $kint3) / 3 ). '<br>';
+// }
+
+
+// echo '<br> ========== <br>';
+
+$arraySize = 30;
+$masyvas = array_fill(0, $arraySize, ' ');
+foreach ($masyvas as $index => &$value) {
+    $value = rand(5, 25);
+   }
+echo '-----------------2-----------';
+echo '<br>';
+
+$under10 = 0;
+foreach($masyvas as $value){
+
+    if($value > 10){
+
+         $under10++;
+    }
 }
-
-
-echo '<br> ========== <br>';
+echo $under10;

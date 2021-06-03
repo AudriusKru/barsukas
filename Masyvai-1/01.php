@@ -26,10 +26,15 @@ foreach ($masyvas as $index => $random) {
         $kiek++;
     }
 }
-echo 'reiksmiu didesniu nei 10 yra:' .$kiek .'<br>' .'<br><hr>';
+echo 'reiksmiu didesniu nei 10 yra: ' .$kiek .'<br>' .'<br><hr>';
 
 echo '2.B Uždavinio atsakymas:';
 echo '<br>';
+
+
+$masyvo = max($masyvas);
+$indekso =array_search(max($masyvas),$masyvas);
+echo 'Max reiksmes: masyvo - ' .$masyvo .', indekso - ' .$indekso .'<br>' .'<br><hr>';
 
 
 echo '2.C Uždavinio atsakymas:';

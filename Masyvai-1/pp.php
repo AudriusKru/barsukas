@@ -62,7 +62,7 @@ echo "<br>";
 $lyginiuIndeksuReiksmiuSuma = 0;
 foreach ($masyvas as $indexas => $skaicius) {
     if ($indexas % 2 === 0) {
-        $lyginiuIndeksuReiksmiuSuma += $skaicius;
+        $lyginiuIndeksuReiksmiuSuma .= $skaicius;
     }
 }
 echo 'Lyginiu indeksu reiksmiu suma yra:    ' . $lyginiuIndeksuReiksmiuSuma;

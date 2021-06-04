@@ -23,27 +23,35 @@ foreach ($masyvas as $index => &$random) {
 }
 unset($random);
 
-
 $kiek = 0;
-
 foreach ($masyvas as $index => $random) {
     if ($random > 10) {
         $kiek++;
     }
 }
-echo "reiksmiu didesniu nei 10 yra: $kiek" '<br>' .'<br><hr>';
+echo "reiksmiu didesniu nei 10 yra: $kiek";
+echo '<br><hr>';
 
 echo '2.B Uždavinio atsakymas:';
 echo '<br>';
-
-
 $masyvo = max($masyvas);
 $indekso =array_search(max($masyvas),$masyvas);
-echo "Max reiksmes: masyvo - $masyvo, indekso - $indekso ."'<br><hr>';
-
+echo "Max reiksmes: masyvo - $masyvo, indekso - $indekso .";
+echo '<br><hr>';
 
 echo '2.C Uždavinio atsakymas:';
 echo '<br>';
+// Suskaičiuokite visų porinių (lyginių) indeksų reikšmių sumą;
+
+$lyginiai_indexsai = 0;
+foreach ($masyvas as $index  => $sk) {
+    if ($index % 2 === 0) {
+        $lyginiai_indexsai += $sk;
+    }
+}
+
+echo "$lyginiai_indexsai";
+echo '<br><hr>';
 
 echo '2.D Uždavinio atsakymas:';
 echo '<br>';

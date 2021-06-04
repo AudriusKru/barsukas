@@ -1,10 +1,5 @@
 <?php
 
-
-
-
-// Papildykite masyvą papildomais 10 elementų su reikšmėmis nuo 5 iki 25, kad bendras masyvas padidėtų iki indekso 39;
-// Iš masyvo elementų sukurkite du naujus masyvus. Vienas turi būti sudarytas iš neporinių indekso reikšmių, o kitas iš porinių;
 // Pirminio masyvo elementus su poriniais indeksais padarykite lygius 0 jeigu jie didesni už 15;
 // Suraskite pirmą (mažiausią) indeksą, kurio elemento reikšmė didesnė už 10;
 // Naudodami funkciją unset() iš masyvo ištrinkite visus elementus turinčius porinį indeksą;
@@ -80,12 +75,18 @@ echo '<br>';
 
 echo '2.F Uždavinio atsakymas:';
 echo '<br>';
+// Iš masyvo elementų sukurkite du naujus masyvus. Vienas turi būti sudarytas iš neporinių indekso reikšmių, o kitas iš porinių;
 
 echo '2.G Uždavinio atsakymas:';
 echo '<br>';
 
+// Pirminio masyvo elementus su poriniais indeksais padarykite lygius 0 jeigu jie didesni už 15;
+
 echo '2.H Uždavinio atsakymas:';
 echo '<br>';
+// Suraskite pirmą (mažiausią) indeksą, kurio elemento reikšmė didesnė už 10;
+
 
 echo '2.I Uždavinio atsakymas:';
 echo '<br>';
+// Naudodami funkciją unset() iš masyvo ištrinkite visus elementus turinčius porinį indeksą;

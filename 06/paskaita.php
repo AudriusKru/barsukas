@@ -26,5 +26,33 @@ foreach($masyvas as $key => $val) {
     }
 }
 
-_d($maxs, 'max');
+_d($max, 'max');
 _d($indexes, 'indexes');
+
+
+/// 222222222hhhhhh
+
+reset($masyvas);
+
+_d(current($masyvas));
+
+_d(key($masyvas));
+
+next($masyvas);
+
+_d(current($masyvas));
+
+_d(key($masyvas));
+
+reset($masyvas);
+
+
+do {
+
+    _d(current($masyvas), key($masyvas));
+
+next($masyvas);
+
+} while (key($masyvas)!==null);
+
+//galima resetint

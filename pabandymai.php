@@ -53,20 +53,22 @@
 
 // echo '<br> ========== <br>';
 
-$arraySize = 30;
-$masyvas = array_fill(0, $arraySize, ' ');
-foreach ($masyvas as $index => &$value) {
-    $value = rand(5, 25);
-   }
-echo '-----------------2-----------';
-echo '<br>';
+// $arraySize = 30;
+// $masyvas = array_fill(0, $arraySize, ' ');
+// foreach ($masyvas as $index => &$value) {
+//     $value = rand(5, 25);
+//    }
+// echo '-----------------2-----------';
+// echo '<br>';
 
-$under10 = 0;
-foreach($masyvas as $value){
+// $under10 = 0;
+// foreach($masyvas as $value){
 
-    if($value > 10){
+//     if($value > 10){
 
-         $under10++;
-    }
-}
-echo $under10;
+//          $under10++;
+//     }
+// }
+// echo $under10;
+
+_d('lol');

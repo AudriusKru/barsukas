@@ -1,13 +1,9 @@
 <?php
 
-$colors = ['red', 'green', 'blue', 'yellow'];
-$masyas = ['lalala'];
-foreach ($colors as $index => $value) {
-// echo 'Reikšmė: '  $value . '<br>';
-echo "<br>--------------<br>";
-$masyas += $colors;
-print_r($masyas);
-echo "<br>";
 
+foreach ($masyvas as $index => $value) {
+    if ($value > 10) {
+        echo "pirmas elementas, kurio reikšmė didesnė už 10: [$index] => $value";
+        break;
+    }
 }
-print_r ($colors);

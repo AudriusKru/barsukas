@@ -128,10 +128,24 @@ echo '2.H Uždavinio atsakymas:';
 echo '<br>';
 // Suraskite pirmą (mažiausią) indeksą, kurio elemento reikšmė didesnė už 10;
 
-foreach($masyvas as $pradzia => $sk) {
-    
+foreach ($masyvas as $index => $value) {
+    if ($value > 10) {
+        echo "Pirmas elementas, kurio reikšmė didesnė už 10: [$index] => $value";
+        break;
+    }
 }
+echo '<br><hr>';
+
 
 echo '2.I Uždavinio atsakymas:';
 echo '<br>';
 // Naudodami funkciją unset() iš masyvo ištrinkite visus elementus turinčius porinį indeksą;
+
+foreach ($masyvas as $key => $value) {
+    if ($key % 2 === 0) {
+        unset($masyvas[$key]);
+    }
+}
+
+print_r($masyvas);
+echo '<br><hr>';

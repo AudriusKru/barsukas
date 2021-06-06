@@ -73,20 +73,79 @@ echo '2.E Uždavinio atsakymas:';
 echo '<br>';
 // Papildykite masyvą papildomais 10 elementų su reikšmėmis nuo 5 iki 25, kad bendras masyvas padidėtų iki indekso 39;
 
+$masyvas = array_pad($masyvas, 40, 0);
+
+foreach($masyvas as $n_index => $value) {
+    if ($n_index > 29) {
+        $masyvas[$n_index] = rand(5, 25);
+    }
+}
+
+print_r($masyvas);
+echo '<br><hr>';
+
 echo '2.F Uždavinio atsakymas:';
 echo '<br>';
 // Iš masyvo elementų sukurkite du naujus masyvus. Vienas turi būti sudarytas iš neporinių indekso reikšmių, o kitas iš porinių;
+
+// poriniai
+$poriniai_masyvas = [];
+$neporiniai_masyvas = [];
+
+foreach ($masyvas as $pradzia  => $sk) {
+    if ($pradzia % 2 === 0) {
+        $poriniai_masyvas[] += $sk;
+    } else {
+        $neporiniai_masyvas[] += $sk;
+    }
+}
+echo 'Poriniai skaičiai:';
+echo '<br>';
+print_r($poriniai_masyvas);
+echo '<br>';
+echo 'Neporiniai skaičiai:';
+echo '<br>';
+print_r($neporiniai_masyvas);
+echo '<br><hr>';
 
 echo '2.G Uždavinio atsakymas:';
 echo '<br>';
 
 // Pirminio masyvo elementus su poriniais indeksais padarykite lygius 0 jeigu jie didesni už 15;
 
+foreach ($neporiniai_masyvas as $pradzia => &$sk) {
+    if ($pradzia % 2 === 0) {
+        if ($sk > 15) {
+            $sk = 0;
+        }
+    }
+}
+unset($sk);
+print_r($neporiniai_masyvas);
+echo '<br><hr>';
+
 echo '2.H Uždavinio atsakymas:';
 echo '<br>';
 // Suraskite pirmą (mažiausią) indeksą, kurio elemento reikšmė didesnė už 10;
+
+foreach ($masyvas as $index => $value) {
+    if ($value > 10) {
+        echo "Pirmas elementas, kurio reikšmė didesnė už 10: [$index] => $value";
+        break;
+    }
+}
+echo '<br><hr>';
 
 
 echo '2.I Uždavinio atsakymas:';
 echo '<br>';
 // Naudodami funkciją unset() iš masyvo ištrinkite visus elementus turinčius porinį indeksą;
+
+foreach ($masyvas as $key => $value) {
+    if ($key % 2 === 0) {
+        unset($masyvas[$key]);
+    }
+}
+
+print_r($masyvas);
+echo '<br><hr>';

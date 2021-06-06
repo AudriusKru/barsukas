@@ -22,4 +22,5 @@ foreach ($masyvas as $index => &$random) {
 }
 unset($random);
 
+echo $elemetai;
 echo '<br>';echo '<br><hr>';echo '<br>';

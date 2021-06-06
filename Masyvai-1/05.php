@@ -49,4 +49,7 @@ foreach($valueCount as $key => $value) {
 
 echo 'Nesikartojančios reikšmės:' .'<br>';
 print_r($non_value);
+echo '<br><hr>';
+echo 'Unikalios kombinacijos:' .'<br>';
+print_r(array_keys($valueCount));
 echo '<br>';

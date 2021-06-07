@@ -1,35 +1,25 @@
 <?php
 
-echo "<br>";
-echo "<br>";
-echo "3-ias uzdavinys";
-echo "<br>";
-echo "<br>";
+// 10.	Sugeneruokite 10 skaičių masyvą pagal taisyklę:
+//  Du pirmi skaičiai- atsitiktiniai nuo 5 iki 25. 
+// Trečias, pirmo ir antro suma. Ketvirtas- antro ir trečio suma. 
+// Penktas trečio ir ketvirto suma ir t.t.
 
-$raides = ['A', 'B', 'C', 'D'];
-$raidziuMasyvas = array_fill(0, 200, 0);
-$a = 0;
-$b = 0;
-$c = 0;
-$d = 0;
+$randomPlus = [];
+$j = 3;
+$k = 2;
+$l = 1;
 
-foreach ($raidziuMasyvas as $key => &$value) {
-    $value = $raides[rand(0, count($raides)-1)];
-    if ($value === 'A') {
-        $a++;
-    } elseif ($value === 'B') {
-        $b++;
-    } elseif ($value === 'C') {
-        $c++;
-    } else {
-        $d++;
+for ($i=1; $i <=10 ; $i++) {
+    if ($i == $j) {
+        $randomPlus[$i] = $randomPlus[$k] + $randomPlus[$l];
+        $j++;
+        $k++;
+        $l++;
+    } else{
+        $randomPlus[$i] = rand(5, 25);
     }
 }
-
-unset($value);
-
-print_r($raidziuMasyvas);
-echo "<br>";
-echo "<br>";
-echo "A pasikartojo $a kartus, B - $b, C - $c, D - $d.";
-
+foreach ($randomPlus as $key => $value) {
+echo "[$key] = $value <br>";
+}

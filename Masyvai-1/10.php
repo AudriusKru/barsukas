@@ -14,7 +14,7 @@ $j = 3;
 $k = 2;
 $l = 1;
 
-for ($i=1; $i <=10 ; $i++) {
+for ($i = 0; $i <= 10 ; $i++) {
     if ($i == $j) {
         $randomPlus[$i] = $randomPlus[$k] + $randomPlus[$l];
         $j++;

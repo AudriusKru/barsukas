@@ -1,6 +1,6 @@
 <?php
 
-echo '4. Uždavinio atsakymas:';
+echo '5. Uždavinio atsakymas:';
 echo '<br>';
 
 $masyvas = array_fill(0, 30, 0);

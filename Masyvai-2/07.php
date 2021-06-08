@@ -30,3 +30,20 @@ usort($masyvas, function($a, $b) {
 
 //-------------------------------------------------------------------------------------
 
+// function randomString()
+// {
+//     $letters = '';
+//     for ($i = 0; $i < rand(5, 15); $i++) {
+//         if ($i == 0) {
+//             $letters .= chr(rand(65, 90));
+//         } else {
+//             $letters .= chr(rand(97, 122));
+//         }
+//     }
+//     return $letters;
+// }
+// foreach ($arr as $key => $value) {
+//     $arr[$key][] = 'Name => ' . randomString();
+//     $arr[$key][] = 'Surname => ' . randomString();
+// }
+// _d($arr, '7')

@@ -16,6 +16,6 @@ function numberis($number) {
      return "Skaičius: $number dalijasi iš $count sveikų skaičių.";
 }
 
-$skaicius = rand(2, 1500);
+$skaicius = rand(2, 150);
 
 echo numberis($skaicius);

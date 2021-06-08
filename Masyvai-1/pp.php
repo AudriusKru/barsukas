@@ -1,25 +1,7 @@
 <?php
 
-// 10.	Sugeneruokite 10 skaičių masyvą pagal taisyklę:
-//  Du pirmi skaičiai- atsitiktiniai nuo 5 iki 25. 
-// Trečias, pirmo ir antro suma. Ketvirtas- antro ir trečio suma. 
-// Penktas trečio ir ketvirto suma ir t.t.
-
-$randomPlus = [];
-$j = 3;
-$k = 2;
-$l = 1;
-
-for ($i=1; $i <=10 ; $i++) {
-    if ($i == $j) {
-        $randomPlus[$i] = $randomPlus[$k] + $randomPlus[$l];
-        $j++;
-        $k++;
-        $l++;
-    } else{
-        $randomPlus[$i] = rand(5, 25);
-    }
+$masyvas3 = array_fill(0, 30, '');
+foreach ($masyvas3 as $ii => $value_ii) {
+    $masyvas3[$ii] = ['user_id' => rand(1, 1000000), 'place_in_row' => rand(0, 100)];
 }
-foreach ($randomPlus as $key => $value) {
-echo "[$key] = $value <br>";
-}
+_d($masyvas3, '5-5');

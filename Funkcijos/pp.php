@@ -1,12 +1,8 @@
 <?php
 
+usort($masyvas, function($a, $b) {
+    return $a['user_id'] <=> $b['user_id'];
+});
 
-$string =  md5(time());
-echo $string;
-
-echo preg_replace_callback('/\d+/m',function($matches){
-    foreach($matches as $index=>$letter){
-        return "<h1>$matches[$index]</h1>";
-    }
-} 
-,$string );
+print_r($masyvas);
+echo '<br><hr>';

@@ -14,3 +14,18 @@ function funkcija($tekstas) {
 $result = preg_replace('/\d/', '', $stringas);
 
 echo funkcija($result);
+
+//----------------------------------destytojo
+
+function h1($text)
+{
+    return "<h1>$text</h1>";
+}
+
+$genText =md5(time());
+
+
+$out = preg_replace_callback('/\d+/', function($match){
+    _d($match);
+    return '';
+}, $genText);

@@ -10,7 +10,7 @@ function numberis($number) {
             $count++;
         } 
         if ($count === 0){
-            return 'Dalyba negalima.';
+            return "$number nesidalina.";
         }
     }       
      return "Skaičius: $number dalijasi iš $count sveikų skaičių.";

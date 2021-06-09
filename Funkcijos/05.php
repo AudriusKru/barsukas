@@ -42,6 +42,15 @@ foreach(range(1, 100) as $_) {
 }
 
 usort($mas100, function($a, $b) {
+    static $cache = [];
+
+    if (!isset($cache[$a])) {
+        $cache[$a] = divisor($a);
+    }
+    if (!isset($cache[$b])) {
+        $cache[$b] = divisor($b);
+    }
+
     return divisor($b) <=> divisor($a);
 });
 

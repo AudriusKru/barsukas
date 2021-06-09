@@ -17,15 +17,15 @@ echo funkcija($result);
 
 //----------------------------------destytojo
 
-function h1($text)
+function h1 (string|array $text) : string
 {
-    return "<h1>$text</h1>";
+    if (is_array($text)) {
+        $text = $text[0];
+    }
+    return "<h1 style=\"display:inline;\">$text</h1>";
 }
 
 $genText =md5(time());
+$out = preg_replace_callback('/\d+/', 'h1', $genText);
 
-
-$out = preg_replace_callback('/\d+/', function($match){
-    _d($match);
-    return '';
-}, $genText);
+echo $out;

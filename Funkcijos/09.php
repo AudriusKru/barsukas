@@ -74,3 +74,17 @@ do {
 } while (!$last3Prime);
 
 _dc($masyvas4);
+
+//--------------------
+
+do {
+    $last3Prime = true;
+    for ($i = count($masyvas4) - 1; $i >= count($masyvas4) - 3; $i--) {
+        if (test($masyvas4[$i]) !== 0) {
+            $last3Prime = false;
+            $masyvas4[] = rand(1, 33);
+        }
+    }
+} while (!$last3Prime);
+
+_dc($masyvas4);

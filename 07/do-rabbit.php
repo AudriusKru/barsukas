@@ -1,7 +1,7 @@
 <?php
 
-$rabbit = file_get_contents(__DIR__.'/zuikis.jpg');
+$rabbit = file_get_contents(__DIR__.'/rabbit.png');
 
-header('Co:')
+header ('Content-Type: image/png');
 
 echo $rabbit;

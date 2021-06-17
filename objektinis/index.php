@@ -1,0 +1,3 @@
+<?php
+
+// Programuotojas Petras

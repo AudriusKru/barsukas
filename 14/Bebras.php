@@ -33,8 +33,25 @@ class Bebras
 
     public function __get($prop)
     {
+        // if (!in_array($prop, ['age', 'color'])) {
+        //     return null;
+        // }
+
+        if ($prop == 'color') {
+            return null;
+        }
+
+        if ($prop == 'rand') {
+            return $this->randomNumber();
+        }
+        
         // echo "<h3>Magic GET with $prop</h3>";
         return $this->$prop;
+    }
+
+    public function randomNumber()
+    {
+        return rand(10, 99);
     }
 
     public function setAge($age)

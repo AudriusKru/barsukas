@@ -18,7 +18,7 @@ echo '<pre>';
 
 $bebras2->name = 'Bobikas';
 
-echo $bebras1->age;
+echo $bebras1->prop;
 
 
 // echo $bebras1->getAge();

@@ -18,7 +18,12 @@ echo '<pre>';
 
 $bebras2->name = 'Bobikas';
 
-echo $bebras1->name;
+echo $bebras1->getAge();
+
+// $bebras2->age='labas';
+
+$bebras2->addYear();
+$bebras2->addYear();
 
 $bebras1->sayHello();
 $bebras2->sayHello();

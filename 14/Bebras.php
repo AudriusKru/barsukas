@@ -16,6 +16,6 @@ class Bebras {
 
     public function sayHello() 
     {
-        echo '<h2>Hello!</h2>';
+        echo "<h2>Hello, $this->name!</h2>";
     }
 }

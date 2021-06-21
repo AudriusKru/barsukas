@@ -16,6 +16,9 @@ echo '<pre>';
 // var_dump($bebras3);
 // echo '<br>';
 
+$bebras2->name = 'Bobikas';
+
 echo $bebras1->name;
 
 $bebras1->sayHello();
+$bebras2->sayHello();

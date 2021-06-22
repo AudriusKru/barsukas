@@ -83,7 +83,7 @@ class Bebras
         }
 
         if ($prop == 'rand') {
-            return $this->randomNumber();
+            return $this->randomNumber($prop);
         }
 
         // echo "<h3>Magic GET with $prop</h3>";

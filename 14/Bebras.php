@@ -31,6 +31,26 @@ class Bebras
         return $this->age;
     }
 
+    public function __set($prop, $value)
+    {
+
+        if ($prop == 'age') {
+            if (!is_integer($value)) {
+                echo 'Petrai, tu pats asilas, tik skaiciai turi buti!';
+                // exception
+                return;
+            }
+            if ($value > 25) {
+                echo 'Petrai, tu pats asilas, tiek bebrai negyena!';
+                // exception
+                return;
+            }
+            $this->age = $value;
+        }
+
+        $this->$prop = $value;
+    }
+
     public function __get($prop)
     {
         // if (!in_array($prop, ['age', 'color'])) {
@@ -44,14 +64,20 @@ class Bebras
         if ($prop == 'rand') {
             return $this->randomNumber();
         }
-        
+
         // echo "<h3>Magic GET with $prop</h3>";
         return $this->$prop;
     }
 
-    public function randomNumber()
+    public function __call($name, $arguments)
     {
-        return rand(10, 99);
+        //return $this->randoNumber(1000);
+        return $this->{$name}(...$arguments);
+    }
+
+    private function randomNumber($time)
+    {
+        return rand(10, 99) * $time;
     }
 
     public function setAge($age)

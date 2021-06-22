@@ -18,12 +18,13 @@ echo '<pre>';
 
 $bebras2->name = 'Bobikas';
 
-echo $bebras1->prop;
+echo $bebras1->randomNumber(1000);
 
 
 // echo $bebras1->getAge();
 
-$bebras2->setAge(8);
+// $bebras2->setAge(8);
+$bebras2->age =20;
 
 
 $bebras2->addYear();

@@ -15,6 +15,11 @@ class Bebras
 
     // metodai
 
+    public function __A__() 
+    {
+        echo "<h2 style=\"color:red;\">As esu kazkoks dalykas.</h2>";
+    }
+
     public function __construct($color = 'black')
     {
         $this->color = $color;
@@ -31,7 +36,7 @@ class Bebras
     {
         echo "<h2>Hello, $this->name!</h2
         <h4>Color: $this->color</h4>
-        <h4>Age: $this->age!</h4>";
+        <h4>Age: $this->age</h4>";
     }
 
     public function addYear()

@@ -6,4 +6,9 @@ class UpinisBebras extends Bebras{
 
     public $river = 'Neris';
 
+    public function __A__() 
+    {
+        echo "<h2 style=\"color:red;\">As esu kazkoks dalykas.</h2>";
+    }
+
 }

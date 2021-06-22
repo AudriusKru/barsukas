@@ -3,12 +3,18 @@
 // Programuotojas Petras
 
 require __DIR__ . '/Bebras.php';
+require __DIR__ . '/UpinisBebras.php';
 
-$bebras1 = new Bebras();
-$bebras2 = new Bebras();
+$bebras1 = new UpinisBebras('blue');
+$bebras2 = new UpinisBebras;
 $bebras3 = $bebras1;
 
+$bebras1->__A__(5);
+// echo 'pradzia';
 echo '<pre>';
+// var_dump($bebras1);
+// echo '<br>';
+
 // var_dump($bebras1);
 // echo '<br>';
 // var_dump($bebras2);
@@ -18,12 +24,19 @@ echo '<pre>';
 
 $bebras2->name = 'Bobikas';
 
-echo $bebras1->getAge();
+// echo $bebras1->randomNumber(1000);
 
-// $bebras2->age='labas';
 
-$bebras2->addYear();
-$bebras2->addYear();
+// echo $bebras1->getAge();
+
+// $bebras2->setAge(8);
+// $bebras2->color =20;
+
+
+// $bebras2->addYear();
+// $bebras2->addYear();
 
 $bebras1->sayHello();
 $bebras2->sayHello();
+
+// echo 'pabaiga';

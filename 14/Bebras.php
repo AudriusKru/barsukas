@@ -34,6 +34,9 @@ class Bebras
     public function __set($prop, $value)
     {
 
+        // _d("kintamasis age yra lygus: $prop");
+        // die;
+
         if ($prop == 'age') {
             if (!is_integer($value)) {
                 echo 'Petrai, tu pats asilas, tik skaiciai turi buti!';
@@ -47,8 +50,8 @@ class Bebras
             }
             $this->age = $value;
         }
-
-        $this->$prop = $value;
+        echo 'Petrai, tu pats asilas. Tu to daryti negali';
+        // $this->$prop = $value;
     }
 
     public function __get($prop)

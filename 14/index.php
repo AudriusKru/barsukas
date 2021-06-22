@@ -24,7 +24,7 @@ echo $bebras1->randomNumber(1000);
 // echo $bebras1->getAge();
 
 // $bebras2->setAge(8);
-$bebras2->age =20;
+$bebras2->color =20;
 
 
 $bebras2->addYear();

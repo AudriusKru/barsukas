@@ -6,17 +6,22 @@ class Pinigine
     private $popieriniaiPinigai;
     private $metaliniaiPinigai;
 
-    private function ideti($kiekis) 
+    public function ideti($kiekis) 
     {
-        if ($kiekis < 2) {
+        if ($kiekis < 0) {
             return "ERROR";
         }
 
         if ($kiekis <= 2) {
             return $this->metaliniaiPinigai += $kiekis;
         }
-        elseif {
+        else 
+        {
             return $this->popieriniaiPinigai +=$kiekis;
         }
+    }
+    public function skaiciuoti() 
+    {
+        return $this->metaliniaiPinigai + $this->popieriniaiPinigai;
     }
 }

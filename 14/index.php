@@ -3,6 +3,7 @@
 // Programuotojas Petras
 
 require __DIR__ . '/Bebras.php';
+require __DIR__ . '/UpinisBebras.php';
 
 $bebras1 = new Bebras('blue');
 $bebras2 = new Bebras;

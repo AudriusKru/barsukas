@@ -2,6 +2,8 @@
 
 // programuotojas Stasys
 
-class UpinisBebras {
-    
+class UpinisBebras extends Bebras{
+
+    public $river = 'Neris';
+
 }

@@ -8,7 +8,7 @@ class Bebras
     // savybes
 
     public $name = 'Sarikas';
-    protected $color = 'brown';
+    protected $color;
     private $age;
 
     //----------------------------------------

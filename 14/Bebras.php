@@ -9,15 +9,28 @@ class Bebras
 
     public $name = 'Sarikas';
     protected $color = 'brown';
-    private $age = 14;
+    private $age;
 
     //----------------------------------------
 
     // metodai
 
+    public function __construct($color = 'black')
+    {
+        $this->color = $color;
+        $this->age = rand(1, 10);
+        echo "<h2>Construct !<h2>";
+    }
+
+    public function __destruct()
+    {
+        echo "<h2>Destruct !<h2>";
+    }
+
     public function sayHello()
     {
         echo "<h2>Hello, $this->name!</h2
+        <h4>Color: $this->color</h4>
         <h4>Age: $this->age!</h4>";
     }
 

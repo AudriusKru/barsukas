@@ -15,7 +15,7 @@ class Bebras
 
     // metodai
 
-    public function __A__() 
+    public function __A__($bla) 
     {
         echo "<h2 style=\"color:red;\">As esu kazkoks dalykas.</h2>";
     }

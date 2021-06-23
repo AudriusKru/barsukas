@@ -21,7 +21,3 @@ class Pinigine
         echo $this->metaliniaiPinigai + $this->popieriniaiPinigai;
     }
 }
-
-
-
-//////////////////////////// Destytojo

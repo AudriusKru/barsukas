@@ -15,7 +15,7 @@
 //     public function pridetiDaugAkmenu($kiekis)
 //     {
 //         if ($kiekis < 0) {
-//             return "ERROR: only positie number!!!";
+//             return "ERROR: only positive number!!!";
 //             
 //         }
 //         return $this->akmenuKiekis += $kiekis;

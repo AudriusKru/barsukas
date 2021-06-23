@@ -15,3 +15,7 @@ echo '<br><hr>';
 echo "Suma: ";
 echo $Pinigine->skaiciuoti();
 echo '<br><hr>'; 
+
+
+
+//////////////////////////// Destytojo

@@ -19,3 +19,4 @@ $Kibiras1->pridetiDaugAkmenu(100);
 echo $Kibiras1->kiekPririnktaAkmenu() . '<br><hr>';
 
 
+//////////////////////////// Destytojo

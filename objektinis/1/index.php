@@ -7,14 +7,15 @@ $Kibiras1 = new Kibiras1;
 echo 'Pirmas užduotis:';
 echo '<br><hr>';
 
-echo "pridetiAkmeni() atsakymas: ";
-echo $Kibiras1->prideti1Akmeni();
-echo '<br><hr>'; 
-
-echo "pridetiDaugAkmenu($$ kiekis) atsakymas: ";
-echo $Kibiras1->prideti1Akmeni();
-echo '<br><hr>'; 
-
 echo "kiekPririnktaAkmenu() atsakymas: ";
-echo $Kibiras1->kiekPririnktaAkmenu();
-echo '<br><hr>'; 
+echo $Kibiras1->kiekPririnktaAkmenu() . '<br><hr>';
+
+echo "pridetiAkmeni() atsakymas: ";
+$Kibiras1->prideti1Akmeni();
+echo $Kibiras1->kiekPririnktaAkmenu() . '<br><hr>';
+
+echo "pridetiDaugAkmenu() atsakymas: ";
+$Kibiras1->pridetiDaugAkmenu(100);
+echo $Kibiras1->kiekPririnktaAkmenu() . '<br><hr>';
+
+

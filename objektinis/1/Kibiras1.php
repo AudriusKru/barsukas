@@ -3,7 +3,7 @@
 
 class Kibiras1
 {
-    protected $akmenuKiekis = 10;
+    protected $akmenuKiekis = 0;
 
 
     public function prideti1Akmeni()
@@ -15,7 +15,8 @@ class Kibiras1
     public function pridetiDaugAkmenu($kiekis)
     {
         if ($kiekis < 0) {
-            return "ERROR: only positie number!!!";
+            print "ERROR: only positie number!!!";
+            return;
         }
         return $this->akmenuKiekis += $kiekis;
     }

@@ -1,27 +1,55 @@
 <?php
 
 
+// class Kibiras1
+// {
+//     protected $akmenuKiekis = 0;
+
+
+//     public function prideti1Akmeni()
+//     {
+//         return $this->akmenuKiekis++;
+//     }
+
+
+//     public function pridetiDaugAkmenu($kiekis)
+//     {
+//         if ($kiekis < 0) {
+//             return "ERROR: only positie number!!!";
+//             
+//         }
+//         return $this->akmenuKiekis += $kiekis;
+//     }
+
+
+//     public function kiekPririnktaAkmenu()
+//     {
+//         return $this->akmenuKiekis;
+//     }
+// }
+
+
+//////////////////////////// Destytojo
+
 class Kibiras1
 {
-    protected $akmenuKiekis = 10;
 
+    protected $akmenuKiekis = 0;
 
     public function prideti1Akmeni()
     {
-        return $this->akmenuKiekis++;
+        $this->akmenuKiekis++;
     }
-
 
     public function pridetiDaugAkmenu($kiekis)
     {
-        if ($kiekis < 0) {
-            return "ERROR: only positie number!!!";
+        if (!is_integer($kiekis)) {
+            return;
         }
-        return $this->akmenuKiekis += $kiekis;
+        $this->akmenuKiekis += $kiekis;
     }
 
-
-    public function kiekPririnktaAkmenu()
+    public function kiekPririnktaAkmenu() 
     {
         return $this->akmenuKiekis;
     }

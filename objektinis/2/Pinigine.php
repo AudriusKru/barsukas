@@ -1,27 +1,27 @@
 <?php
 
 
-class Pinigine 
+class Pinigine
 {
     private $popieriniaiPinigai;
     private $metaliniaiPinigai;
 
-    public function ideti($kiekis) 
+    public function ideti($kiekis)
     {
         if ($kiekis < 0) {
-            return "ERROR";
-        }
-
-        if ($kiekis <= 2) {
+            return "ERROR: bandyta atimti pinigus.";
+        } elseif ($kiekis <= 2) {
             return $this->metaliniaiPinigai += $kiekis;
-        }
-        else 
-        {
-            return $this->popieriniaiPinigai +=$kiekis;
+        } else {
+            return $this->popieriniaiPinigai += $kiekis;
         }
     }
-    public function skaiciuoti() 
+    public function skaiciuoti()
     {
-        return $this->metaliniaiPinigai + $this->popieriniaiPinigai;
+        echo $this->metaliniaiPinigai + $this->popieriniaiPinigai;
     }
 }
+
+
+
+//////////////////////////// Destytojo

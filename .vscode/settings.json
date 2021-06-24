@@ -1,0 +1,10 @@
+{
+    "intelephense.phpdoc.useFullyQualifiedNames": true,
+    "terminal.integrated.profiles.windows": {
+
+        "Git Bash": {
+            "source": "Git Bash"
+        }
+    },
+
+}

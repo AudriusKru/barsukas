@@ -3,9 +3,9 @@
 
 require __DIR__ . '/Kibiras1.php';
 
-$Kibiras1 = new Kibiras1;
-echo 'Pirmas užduotis:';
-echo '<br><hr>';
+// $Kibiras1 = new Kibiras1;
+// echo 'Pirmas užduotis:';
+// echo '<br><hr>';
 
 // echo "kiekPririnktaAkmenu() atsakymas: ";
 // echo $Kibiras1->kiekPririnktaAkmenu() . '<br><hr>';

@@ -1,6 +1,7 @@
 <?php
 
 require __DIR__ . '/Tv.php';
+
 require __DIR__ . '/Cart.php';
 
 
@@ -12,8 +13,6 @@ $TV3 = new Tv(46);
 
 // $TV1->kanalai[1] = 'LRT2';
 // Tv::$kanalai[1] = 'LRT2';
-
-
 
 $TV2->rodyti(1);
 $TV1->rodyti(1);

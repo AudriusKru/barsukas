@@ -1,7 +1,7 @@
 <?php
 
 
-// require __DIR__ . '/Kibiras1.php';
+require __DIR__ . '/Kibiras1.php';
 
 // $Kibiras1 = new Kibiras1;
 // echo 'Pirmas užduotis:';
@@ -21,13 +21,13 @@
 
 //////////////////////////// Destytojo
 
-require __DIR__ . '/Kibiras1.php';
 
 $kibirasA = new Kibiras1;
 $kibirasB = new Kibiras1;
 
 _d($kibirasA->kiekPririnktaAkmenu(), 'A');
 _d($kibirasB->kiekPririnktaAkmenu(), 'B');
+_d(Kibiras1::kiekVisoPririnktaAkmenu(), 'VISO');
 
 $kibirasA->prideti1Akmeni();
 $kibirasA->prideti1Akmeni();
@@ -37,6 +37,4 @@ $kibirasB->pridetiDaugAkmenu(5);
 
 _d($kibirasA->kiekPririnktaAkmenu(), 'A');
 _d($kibirasB->kiekPririnktaAkmenu(), 'B');
-
-
-
+_d(Kibiras1::kiekVisoPririnktaAkmenu(), 'VISO');

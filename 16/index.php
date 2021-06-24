@@ -2,16 +2,27 @@
 
 require __DIR__ . '/Tv.php';
 
+require __DIR__ . '/Cart.php';
+
+
+Tv::keistiPrograma(1,'LRT202');
 
 $TV1 = new Tv(32);
 $TV2 = new Tv(108);
 $TV3 = new Tv(46);
 
 // $TV1->kanalai[1] = 'LRT2';
+// Tv::$kanalai[1] = 'LRT2';
 
-$TV1::$kanalai[1] = 'LRT2';
-$TV2::keistiPrograma(1, 'LRT101');
-
-$TV1->rodyti(1);
 $TV2->rodyti(1);
+$TV1->rodyti(1);
 $TV3->rodyti(1);
+
+$cart1 = Cart::getCart();
+$cart2 = Cart::getCart();
+
+
+echo '<pre>';
+var_dump($cart1);
+echo '<br>'; 
+var_dump($cart2);

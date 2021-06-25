@@ -24,5 +24,5 @@ $cart2 = Cart::getCart();
 
 echo '<pre>';
 var_dump($cart1);
-echo '<br>'; 
-var_dump($cart2);
+// echo '<br>'; 
+// var_dump($cart2);

@@ -11,7 +11,7 @@ class App {
 
     public static function view($file, $data = []) 
     {
-        
+        extract($data);
         require DIR.'views/'.$file.'.php';
     }
 

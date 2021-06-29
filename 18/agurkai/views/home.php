@@ -1,6 +1,4 @@
 <?php require DIR.'views/top.php' ?>
 
-
-Bla bla bla
-
+blablabla 
 <?php require DIR.'views/bottom.php' ?>

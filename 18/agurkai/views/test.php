@@ -1,6 +1,7 @@
 <?php require DIR.'views/top.php' ?>
 
+<h2>Labas aš AgurkaiController</h2>
+<?= $whatToSay ?>
 
-<h1>404 PAGE NOT FOUND</h1>
 
 <?php require DIR.'views/bottom.php' ?>

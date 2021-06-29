@@ -5,14 +5,12 @@ class AgurkaiController {
 
     public function agurkuTest($say)
     {
-        echo 'Labas aš AgurkaiController';
-        echo '<br>';
-        echo $say;
+        return App::view('test', ['$whatToSay' => $say]);
     }
 
     public function index()
     {
-        require DIR.'views/home.php';
+        return App::view('home');
     }
 
 

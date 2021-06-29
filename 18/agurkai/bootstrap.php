@@ -1,7 +1,4 @@
-<!-- pagrindiniai setting , nustatymai, kodai -->
-
 <?php
-
 defined('ENTER') || die;
 session_start();
 define('DIR', __DIR__.'/');

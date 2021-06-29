@@ -7,23 +7,20 @@ $Kibiras2 = new Kibiras2;
 echo 'Trečia užduotis:';
 echo '<br><hr>';
 
-$kibirasA = new Kibiras2;
-$kibirasB = new Kibiras2;
-$kibirasC = new Kibiras2;
+$kibiras1 = new Kibiras2;
+$kibiras2 = new Kibiras2;
+$kibiras3 = new Kibiras2;
 
-_d($kibirasA->kiekPririnktaAkmenu(), 'A');
-_d($kibirasB->kiekPririnktaAkmenu(), 'B');
-_d(Kibiras1::kiekVisoPririnktaAkmenu(), 'VISO');
+$kibiras1->prideti1Akmeni();
+$kibiras2->prideti1Akmeni();
 
-// $kibirasA->prideti1Akmeni();
-// $kibirasB->prideti1Akmeni();
-// $kibirasC->prideti1Akmeni();
-// $kibirasA->pridetiDaugAkmenu(10);
-// $kibirasB->pridetiDaugAkmenu(5);
+echo $Kibiras1::kiekVisoPririnktaAkmenu()
+
 
 // _d($kibirasA->kiekPririnktaAkmenu(), 'A');
 // _d($kibirasB->kiekPririnktaAkmenu(), 'B');
 // _d(Kibiras2::kiekVisoPririnktaAkmenu(), 'VISO');
+$kibiras2->kiekPririnktaAkmenu();
 
 // $KibirasA->Kibiras2::getKibiras(5);
 

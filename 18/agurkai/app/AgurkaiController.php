@@ -3,15 +3,14 @@
 class AgurkaiController {
 
 
-    public function agurkuTest($whatToSay)
+    public function agurkuTest($wahatToSay)
     {
-        return App::view('test', compact('whatToSay'));
+        $labas = 'Hello, little One';
+        return App::view('test', compact('wahatToSay', 'labas'));
     }
 
     public function index()
     {
         return App::view('home');
     }
-
-
 }

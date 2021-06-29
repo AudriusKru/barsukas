@@ -3,9 +3,9 @@
 class AgurkaiController {
 
 
-    public function agurkuTest($say)
+    public function agurkuTest($whatToSay)
     {
-        return App::view('test', ['$whatToSay' => $say]);
+        return App::view('test', compact('whatToSay'));
     }
 
     public function index()

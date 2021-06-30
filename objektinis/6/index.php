@@ -1,4 +1,4 @@
-<?php
+<!-- <?php
 
 
 include __DIR__ . '/Stikline.php';
@@ -19,4 +19,4 @@ echo '<br>';
 echo 'trecias ipilimas 100:';
 $Stikline->ipilti(100);
 echo $Stikline->ipilti();
-echo '<br>';
+echo '<br>'; -->

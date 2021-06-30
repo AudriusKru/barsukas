@@ -51,7 +51,7 @@ if (isset($_GET['rodyti'])) {
 
 else {
     if(isset($_GET['ok'])) {
-        echo '<div style="color:red;" duomenys gauti</div>';
+        echo '<div style="color:red">duomenys gauti</div>';
     }
 
     echo 'sveiki atyke i musu puslapi';

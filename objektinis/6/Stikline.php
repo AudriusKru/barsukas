@@ -1,4 +1,4 @@
-<?php
+<!-- <?php
 
 class Stikline
 {
@@ -6,8 +6,8 @@ class Stikline
     private $kiekis = 0;
 
     public function ipilti($kiekis) {
-        if ($kiekis > $turis) {
-            return $this->kiekis =
+        if ($kiekis) {
+            return $this->kiekis;
         }
     }
 
@@ -17,4 +17,4 @@ class Stikline
         $this->kiekis = 0;
         return $kiekis;
     }
-}
+} -->

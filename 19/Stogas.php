@@ -1,6 +1,6 @@
 <?php
 
-abstract class Stogas {
+abstract class Stogas implements Planas, PlanasStogui {
 
     public function doStogas()
     {
@@ -12,9 +12,7 @@ abstract class Stogas {
         return $k1 + $k2 + $k3 + $k4;
     }
 
-    public abstract function getKampas1();
-    public abstract function getKampas2();
-    public abstract function getKampas3();
-    public abstract function getKampas4();
-
+    public function lietausLatakas()
+    {
+    }
 }

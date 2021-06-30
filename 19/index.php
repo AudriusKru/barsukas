@@ -1,5 +1,7 @@
 <?php
 
+require __DIR__ . '/PlanasStogui.php';
+require __DIR__ . '/Planas.php';
 require __DIR__ . '/Stogas.php';
 require __DIR__ . '/Antras.php';
 require __DIR__ . '/Pirmas.php';

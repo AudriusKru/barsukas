@@ -1,6 +1,6 @@
 <?php
 
-abstract class Antras extends Stogas {
+abstract class Antras extends Stogas implements Planas {
 
     public function doAntras()
     {
@@ -12,9 +12,9 @@ abstract class Antras extends Stogas {
         return $k1 * $k2 * $k3 * $k4;
     }
 
-    public abstract function getKampas1();
-    public abstract function getKampas2();
-    public abstract function getKampas3();
-    public abstract function getKampas4();
+    // public abstract function getKampas1();
+    // public abstract function getKampas2();
+    // public abstract function getKampas3();
+    // public abstract function getKampas4();
 
 }

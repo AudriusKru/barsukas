@@ -9,21 +9,16 @@ class App {
         ob_end_flush();
     }
 
-    public static function view($file, $data = []) 
+    public static function view($file, $data = [])
     {
         extract($data);
         require DIR.'views/'.$file.'.php';
     }
 
-
     private static function router()
     {
-    
         $uri = str_replace(INSTALL_DIR, '', $_SERVER['REQUEST_URI']);
         $uri = explode('/', $uri);
-
-
-    // ROUTER
 
         if ($uri[0] == 'testas' && isset($uri[1])) {
             return (new AgurkaiController)->agurkuTest($uri[1]);
@@ -31,8 +26,9 @@ class App {
         if ($uri[0] === '' && count($uri) === 1) {
             return (new AgurkaiController)->index();
         }
-            
-            self::view('404');
-            http_response_code(404);
+
+        self::view('404');
+        http_response_code(404);
+
     }
 }

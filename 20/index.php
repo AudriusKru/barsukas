@@ -9,6 +9,8 @@ require __DIR__.'/australai/Animal.php';
 require __DIR__.'/belgai/Animal.php';
 require __DIR__.'/Animal.php';
 
+//php siulo funkcija sp_autoload();
+
 
 
 

@@ -1,0 +1,20 @@
+{
+    "name": "audrius/20",
+    "description": "bla bla",
+    "authors": [
+        {
+            "name": "AudriusKru",
+            "email": "krutulis.audrius@gmail.cm"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Zoo\\": "",
+            "Australia\\": "australai",
+            "Belgium\\": "belgai"
+        }
+    },
+    "require": {
+        "ramsey/uuid": "^4.1"
+    }
+}

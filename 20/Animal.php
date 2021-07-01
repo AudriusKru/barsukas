@@ -5,7 +5,7 @@ use Ramsey\Uuid\Uuid;
 
 class Animal extends Australia {
 
-    public static $hello = 'hello from Lithuania';
+    public static $hello = 'Hello from Lithuania';
 
     public static function sayUUID()
     {

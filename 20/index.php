@@ -67,6 +67,8 @@ require __DIR__ .'/vendor/autoload.php';
 echo Animal::sayUUID();
 // new Animal;
 echo '<br>';
+echo Animal::$hello;
+echo '<br>';
 echo AnimalA::$go;
 echo '<br>';
 echo Animal::$go;

@@ -5,7 +5,9 @@ namespace Zoo;
 use Zoo\Animal;
 use Australia\Animal as AnimalA;
 use Belgium\Animal as B;
-// require __DIR__ .'/vendor/autoload.php';
+
+require __DIR__ .'/vendor/autoload.php';
+
 
 // php siulo funkcija sp_autoload();
 //prefix yra ta namespace dalis kuri neatitinka folderio strukturos  mes turime (zoo animal bet musu folderio zoo nera tai mes sakome kad sori bet pas mus toks dalykas kaip zoo folderi neegzituoja)
@@ -68,7 +70,7 @@ echo '<br>';
 echo AnimalA::$go;
 // new AnimalA;
 echo '<br>';
-echo Animal::$hello;
+echo Animal::$go;
 echo '<br>';
 echo B::$go;
 // new B;

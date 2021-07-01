@@ -7,5 +7,12 @@
             "email": "krutulis.audrius@gmail.cm"
         }
     ],
+    "autoload": {
+        "psr-4": {
+            "Zoo\\": "",
+            "Australia\\": "australai",
+            "Belgium\\": "belgai"
+        }
+    },
     "require": {}
 }

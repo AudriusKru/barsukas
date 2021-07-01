@@ -1,12 +1,24 @@
 <?php
 namespace Zoo;
+//short code
+use Zoo\Animal;
+use Australia\Animal as AnimalA;
+use Belgium\Animal as B;
 
-require __DIR__.'/Animal.php';
-require __DIR__.'/belgai/Animal.php';
 require __DIR__.'/australai/Animal.php';
+require __DIR__.'/belgai/Animal.php';
+require __DIR__.'/Animal.php';
 
-new Animal;
 
-new Australia\Animal;
 
-new Belgium\Animal;
+
+echo Animal::$hello;
+// new Animal;
+echo '<br>';
+echo AnimalA::$go;
+// new AnimalA;
+echo '<br>';
+echo Animal::$go;
+// new B;
+
+

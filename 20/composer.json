@@ -1,0 +1,11 @@
+{
+    "name": "audrius/20",
+    "description": "bla bla",
+    "authors": [
+        {
+            "name": "AudriusKru",
+            "email": "krutulis.audrius@gmail.cm"
+        }
+    ],
+    "require": {}
+}

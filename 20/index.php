@@ -6,6 +6,8 @@ use Zoo\Animal;
 use Australia\Animal as AnimalA;
 use Belgium\Animal as B;
 
+require __DIR__ .'/vendor/autoload.php';
+
 //php siulo funkcija sp_autoload();
 
 // spl_autoload_register(function ($class) {
@@ -40,5 +42,5 @@ echo '<br>';
 echo AnimalA::$go;
 // new AnimalA;
 echo '<br>';
-echo Animal::$go;
+echo B::$go;
 // new B;

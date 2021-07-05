@@ -4,8 +4,14 @@ use App\DB\DataBase;
 class Json implements DataBase {
 
     private $data;
+    private static $obj;
 
-    public function __construct()
+    public static function getJson()
+    {
+        return self::$obj ?? self::$obj = new self;
+    }
+
+    private function __construct()
     {
         if (!file_exists(DIR .'/boxes.json')) {
             file_put_contents(DIR .'/boxes.json', json_encode([]));

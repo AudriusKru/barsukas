@@ -1,6 +1,6 @@
 {
     "name": "audrius/20",
-    "description": "bla bla",
+    "description": "Objective Bank",
     "authors": [
         {
             "name": "AudriusKru",
@@ -9,12 +9,8 @@
     ],
     "autoload": {
         "psr-4": {
-            "Zoo\\": "",
-            "Australia\\": "australai",
-            "Belgium\\": "belgai"
+            "Bank\\": "app"
         }
     },
-    "require": {
-        "ramsey/uuid": "^4.1"
-    }
+    "require": {}
 }

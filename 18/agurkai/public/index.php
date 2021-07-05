@@ -9,7 +9,7 @@ require __DIR__ . '/../bootstrap.php';
 // // App
 // require DIR.'app/App.php';
 
-App::start();
+Bank\App::start();
 
 
 

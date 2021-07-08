@@ -10,7 +10,7 @@ $dsn = "mysql:host=$host;dbname=$db;charset=$charset";
 
 $options = [
     PDO::ATTR_ERRMODE            => PDO::ERRMODE_EXCEPTION,
-    PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
+    PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,           // kaip masyvas
     PDO::ATTR_EMULATE_PREPARES   => false,
 ];
 $pdo = new PDO($dsn, $user, $pass, $options);
@@ -37,4 +37,17 @@ $sql = "INSERT INTO trees (`name`, height, `type`)
 $pdo->query($sql);
 
 
+//skaitymas 
+
+
+$sql = "SELECT id, `name`, height, `type`
+        FROM trees
+       ";
+
+$stmt = $pdo->query($sql);              // DB steitmentas
+
+       while ($row = $stmt->fetch())    // duok man viena eilute
+       {
+           echo $row['id'] . ' '.$row['name'].' '.$row['height'].' '.$row['type'].'<br>';
+       }
 

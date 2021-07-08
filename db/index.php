@@ -16,3 +16,25 @@ $options = [
 $pdo = new PDO($dsn, $user, $pass, $options);
 
 
+
+// seeder
+$trees = [
+    [ 'Beržas', rand(0, 1500) / 100, 1 ],
+    [ 'Eglė', rand(0, 1500) / 100, 1 ],
+    [ 'Pušis', rand(0, 1500) / 100, 1 ],
+    [ 'Kedras', rand(0, 1500) / 100, 1 ],
+    [ 'Palmė', rand(0, 1500) / 100, 1 ],
+    [ 'Agrastas', rand(0, 1500) / 100, 1 ],
+    [ 'Šermukšnis', rand(0, 1500) / 100, 1 ],
+    [ 'Kaštonas', rand(0, 1500) / 100, 1 ]
+];
+$n = rand(0, count($trees) - 1);
+
+$sql = "INSERT INTO trees (`name`, height, `type`) 
+        VALUES ( '".$trees[$n][0]."', ".$trees[$n][1].", ".$trees[$n][2].")
+        ";
+
+$pdo->query($sql);
+
+
+

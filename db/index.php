@@ -20,11 +20,11 @@ $pdo = new PDO($dsn, $user, $pass, $options);
 // seeder
 $trees = [
     [ 'Beržas', rand(0, 1500) / 100, 1 ],
-    [ 'Eglė', rand(0, 1500) / 100, 1 ],
-    [ 'Pušis', rand(0, 1500) / 100, 1 ],
-    [ 'Kedras', rand(0, 1500) / 100, 1 ],
-    [ 'Palmė', rand(0, 1500) / 100, 1 ],
-    [ 'Agrastas', rand(0, 1500) / 100, 1 ],
+    [ 'Eglė', rand(0, 1500) / 100, 2 ],
+    [ 'Pušis', rand(0, 1500) / 100, 2 ],
+    [ 'Kedras', rand(0, 1500) / 100, 2 ],
+    [ 'Palmė', rand(0, 1500) / 100, 3 ],
+    [ 'Agrastas', rand(0, 1500) / 100, 2 ],
     [ 'Šermukšnis', rand(0, 1500) / 100, 1 ],
     [ 'Kaštonas', rand(0, 1500) / 100, 1 ]
 ];
@@ -42,6 +42,8 @@ $pdo->query($sql);
 
 $sql = "SELECT id, `name`, height, `type`
         FROM trees
+        WHERE `type` <> 2 AND height > 10
+        ORDER BY `name`
        ";
 
 $stmt = $pdo->query($sql);              // DB steitmentas
@@ -51,3 +53,22 @@ $stmt = $pdo->query($sql);              // DB steitmentas
            echo $row['id'] . ' '.$row['name'].' '.$row['height'].' '.$row['type'].'<br>';
        }
 
+
+// redagaimas
+
+$sql = "UPDATE trees
+        SET height = 5.55
+        WHERE id = 22
+        ";
+
+$pdo->query($sql);
+
+
+// trynimas
+
+
+$sql =  "DELETE FROM trees
+         WHERE id = 24
+        ";
+
+$pdo->query($sql);
